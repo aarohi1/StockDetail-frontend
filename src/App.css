@@ -1,25 +1,59 @@
-.App {
+.stock-app {
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.logo {
+  height: 8vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heroCard {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left:10%;
+  margin-right: 10%;
+  /* margin-trim:5%; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heroCard-card{
+width: 73%;
+height: 65%;
+background-color: #F5F5F5;
+margin:5%;
+padding:5%;
+}
+.heroCard-card-head{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top:5%;
+}
+
+.heroCard-card-head p{
+  font-weight:bold;
+  font-size:large;
+}
+
+.heroCard-card-amount p{
+  font-weight:bold;
+  font-size:x-large;
+
+}
+
+.heroCardLogo{
+  height:27%;
+  width:25%;
+}
+
+.stock-app-header {
+  background-color: #35496B;
+  min-height: 10vh;
+  display: flex;
+  padding: 0.5em;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -27,6 +61,138 @@
 .App-link {
   color: #61dafb;
 }
+.stock-table{
+  border-radius:2%;
+  box-shadow:5px 2px 5px 2px #000;
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+}
+
+.table-heading{
+  background-color:#F4F2FF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.table-heading h3{
+  width: 140px;
+  color:#6E6893;
+  /* font-size:12px; */
+}
+
+.stock-search{
+  display: flex;
+  justify-content: start;
+  background-color: #fff;
+  padding-left:2%;
+  height: 80px;
+  border-bottom: 3px solid #d7d7d7;
+  width:97%;
+}
+
+.stock-search p{
+  padding-right:3%;
+  font-size:20px;
+  width: 30%;
+}
+
+.stock-input{
+  margin: 10px;
+  background-color:#F4F2FF;
+  font-size: 15px;
+  height: 40px;
+  width: 90%;
+  border-radius:5px;
+  padding-left:5%;
+}
+
+
+
+.stock-container{
+  display: flex;
+  justify-content: center;
+}
+
+.stock-row{
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  height: 50px;
+  border-bottom: 2px solid #d7d7d7;
+  width:100%;
+  justify-content: space-evenly;
+}
+
+.stock{
+  display:flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-evenly;
+  
+}
+.stock p{
+  font-size: 15px;
+  width:20%;
+}
+.stock-name{
+  width:5%;
+}
+
+.stock-symbol{
+  width:5%;
+  padding: 10px;
+  border-radius:50px;
+  background-color:#E6E6F2;
+  text-transform: uppercase;
+}
+
+.stock-data{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  
+}
+.stock-data p{
+  font-size: 15px;
+}
+.stock-price{
+  width: 110px;
+}
+
+.stock-volume{
+  width: 155px;
+}
+
+.stock-button-saveData{
+  width: 120px;
+  height: 40px;
+  background-color: #18A0FB;  
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+.stock-button-view{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+background-color:#6D5BD0;
+}
+
 
 @keyframes App-logo-spin {
   from {
